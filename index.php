@@ -17,6 +17,7 @@
     echo "The point of student B is: $BM, $BH, $BS <br>";
     echo "The point of student C is: $CM, $CH, $CS <br>";   
     echo "The point of student D is: $DM, $DH, $DS <br>";
-    echo "<br>";
+    
+
 
 ?>
