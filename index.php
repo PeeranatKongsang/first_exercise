@@ -1,23 +1,26 @@
 <?php
     // input the point from user of student 
-    $AM = 56
-    $AH = 89
-    $AS = 78
-    $BM = 45
-    $BH = 67
-    $BS = 90
-    $CM = 88
-    $CH = 76    
-    $CS = 65
-    $DM = 55
-    $DH = 45
-    $DS = 78
+    // let make it array instead of variable
 
-    echo "The point of student A is: $AM, $AH, $AS <br>";
-    echo "The point of student B is: $BM, $BH, $BS <br>";
-    echo "The point of student C is: $CM, $CH, $CS <br>";   
-    echo "The point of student D is: $DM, $DH, $DS <br>";
-    
+    $FirstStudent = array(56, 89, 78);
+    $SecondStudent = array(45, 67, 90);
+    $ThirdStudent = array(88, 76, 65);
+    $FourthStudent = array(55, 45, 78);
 
+
+    function DisplayStudent($studentName, $scores) {
+        echo "<h2>Student: $studentName</h2>";
+        echo "<ul>";
+        echo "<li>Math: " . $scores[0] . "</li>";
+        echo "<li>Science: " . $scores[1] . "</li>";
+        echo "<li>English: " . $scores[2] . "</li>";
+        echo "</ul>";
+    }
+
+    DisplayStudent("First Student", $FirstStudent);
+    DisplayStudent("Second Student", $SecondStudent);
+    DisplayStudent("Third Student", $ThirdStudent);
+    DisplayStudent("Fourth Student", $FourthStudent);
+    echo "<hr>";
 
 ?>
